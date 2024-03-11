@@ -1,0 +1,9 @@
+__pypackages__/
+*.py[cod]
+*$py.class
+
+alembic/
+alembic.ini
+
+media/
+.env
