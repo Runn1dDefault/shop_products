@@ -128,7 +128,6 @@ class Customer(BaseModel):
 
     email: Mapped[str] = mapped_column(String(50), unique=True, nullable=False)
     fullname: Mapped[str] = mapped_column(String(100), nullable=False)
-    image: Mapped[str] = mapped_column(String(100), nullable=True)
 
     reviews: Mapped[list["ProductReview"]] = relationship(back_populates="customer")
 
